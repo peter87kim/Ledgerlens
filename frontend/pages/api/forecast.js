@@ -20,7 +20,7 @@ export default async function handler(req, res) {
   ];
 
   // 2. Call your backend forecast endpoint
-  const backendUrl = 'https://<your-backend-subdomain>.vercel.app/api/forecast';
+  const backendUrl = 'https://ledgerlens-backend.vercel.app/api/forecast';
   const backendRes = await fetch(backendUrl, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
